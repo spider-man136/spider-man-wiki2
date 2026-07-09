@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spider-Man Universe</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+    background:#b11313;
+    box-shadow:0 0 20px red;
+}
+
+header img{
+    width:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+header h1{
+    font-size:50px;
+}
+
+nav{
+    background:#111;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:red;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h2{
+    font-size:48px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:22px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.button:hover{
+    background:darkred;
+}
+
+.characters{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:50px;
+}
+
+.card{
+    width:320px;
+    background:rgba(25,25,25,.85);
+    backdrop-filter:blur(8px);
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(255,0,0,.4);
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 30px red;
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    padding:15px;
+    color:#ff4444;
+}
+
+.card p{
+    padding:0 20px 20px;
+    line-height:1.6;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    background:#111;
+    padding:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<img src="logo.jpg" alt="Spider Logo">
+
+<h1>🕷 Spider-Man Universe 🕸</h1>
+
+</header>
+
+<nav>
+
+<a href="#peter">Peter Parker</a>
+<a href="#miles">Miles Morales</a>
+<a href="#gwen">Spider-Gwen</a>
+<a href="#noir">Spider-Man Noir</a>
+<a href="#ham">Spider-Ham</a>
+<a href="#miguel">Spider-Man 2099</a>
+ <a href="#trex">Spider-Rex</a>
+    <a href="#monkey">Spider-Monkey</a>
+    <a href="#milesg">Miles G. Morales</a>
+    <a href="#venom">Venom</a>
+    <a href="#superior">Superior Spider-Man</a
+        <a href="#anti-venom">Agent Anti-Venom</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>Welcome to the Spider-Verse</h2>
+
+<p>Every Spider has a story.</p>
+
+<a class="button" href="#characters">Meet the Heroes</a>
+
+</section>
+
+<section class="characters" id="characters">
+
+<div class="card" id="peter">
+<img src="peter.jpg">
+<h3>Peter Parker</h3>
+<p>The original Spider-Man and protector of New York City.</p>
+</div>
+
+<div class="card" id="miles">
+<img src="miles.jpg">
+<h3>Miles Morales</h3>
+<p>Brooklyn's Spider-Man with Venom Blast and camouflage abilities.</p>
+</div>
+
+<div class="card" id="gwen">
+<img src="gwen.jpg">
+<h3>Spider-Gwen</h3>
+<p>Gwen Stacy became Spider-Woman in her own universe.</p>
+</div>
+
+<div class="card" id="noir">
+<img src="noir.jpg">
+<h3>Spider-Man Noir</h3>
+<p>A detective-style Spider-Man from the dark 1930s universe.</p>
+</div>
+
+<div class="card" id="ham">
+<img src="ham.jpg">
+<h3>Spider-Ham</h3>
+<p>The hilarious cartoon hero known as Peter Porker.</p>
+</div>
+
+<div class="card" id="miguel">
+<img src="2099.jpg">
+<h3>Spider-Man 2099</h3>
+<p>Miguel O'Hara, the futuristic Spider-Man from the year 2099.</p>
+</div>
+
+<div class="card" id="trex">
+    <img src="trex.jpg" alt="Spider-Rex">
+    <h3>Spider-Rex</h3>
+    <p>
+        Spider-Rex is a Tyrannosaurus Rex from another universe who gained
+        spider powers after being bitten by a prehistoric spider. He combines
+        incredible strength with agility to protect the Spider-Verse.
+    </p>
+</div>
+
+<div class="card" id="monkey">
+    <img src="monkey.jpg" alt="Spider-Monkey">
+    <h3>Spider-Monkey</h3>
+    <p>
+        Spider-Monkey is a primate hero with amazing climbing abilities,
+        lightning-fast reflexes, and the powers of a spider. He swings through
+        the jungle to defend his home from danger.
+    </p>
+</div>
+
+<div class="card" id="milesg">
+    <img src="milesg.jpg" alt="Miles G. Morales">
+    <h3>Miles G. Morales</h3>
+    <p>
+        Miles G. Morales comes from Earth-42, a universe where there is no
+        Spider-Man. Instead of becoming a hero, he grows up as the mysterious
+        Prowler, using advanced technology and stealth while protecting those
+        closest to him.
+    </p>
+</div>
+
+<div class="card" id="venom">
+    <img src="venom.jpg" alt="Venom">
+    <h3>Venom</h3>
+    <p>
+        Venom is a symbiote host with enhanced strength, speed, and durability.
+        He has a complex relationship with Spider-Man, often serving as both an
+        enemy and an ally.
+    </p>
+</div>
+
+<div class="card" id="superior">
+    <img src="superior.jpg" alt="Superior Spider-Man">
+    <h3>Superior Spider-Man</h3>
+    <p>
+  Doctor Otto Octavius (of Earth-616), better known as Doctor Octopus or Doc Ock, was one of Spider-Man's greatest enemies and one of the iconic comic book characters in the world.
+    </p>
+</div>
+
+<div class="card" id="anti-venom">
+    <img src="anti-venom.jpg" alt="Agent Anti-Venom">
+    <h3>Agent Anti-Venom</h3>
+    <p>
+  Flash Thompson was Peter Parker's school bully.After losing his legs in the Iraq War, he bonded with the Venom Symbiote.and fought to protect people.
+    </p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>🕸 Spider-Man Fan Website 🕸</h3>
+        Prowler, using advanced technology and stealth while protecting those
+        closest to him.
+    </p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>🕸 Spider-Man Fan Website 🕸</h3>
+
+<p>Created with HTML & CSS</p>
+
+</footer>
+
+</body>
+</html>
